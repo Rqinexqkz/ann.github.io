@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body{
+        background-color: #191919;
+        margin:0;
+        font-family: "Poppins", sans-serif;
+        color:#FFDFDF;
+    }
+
+    /*NAVIGATION*/
+    .logo{
+        color: #FFDFDF;
+        width: 40px;
+        position:absolute;
+        padding: 1rem;
+        padding-left: 2rem;
+        display: inline-block;
+    }
+
+    nav{
+        margin-bottom: 10px;
+        position: fixed;
+        width:100%;
+        height: auto;
+        z-index: 1000;
+        background-color: #191919;
+    }
+
+    .navigation{
+        font-size: 18px;
+        padding: 10px;
+        padding-right: 2rem;
+    }
+    
+    a{
+        margin: 10px;
+        padding: 10px;
+        float: right;
+        text-decoration: none;
+        color: #FFDFDF;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        transition: box-shadow 0.3s;
+        size: 10px;
+    }
+
+    a:hover{
+        font-weight:bold;
+        background-image: linear-gradient(to right, #EFBC9B, #AD88C6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #614385;
+        border: 1px solid #614385;
+        border-radius: 8px;
+        border-color: linear-gradient(to right, #EFBC9B, #AD88C6);
+        color: transparent;
+        box-shadow: 0 0 0 1px #EFBC9B, 0 0 0 1px #AD88C6;
+    }
+
+    /*HOME PAGE*/
+    .main{
+        position: fixed;
+        padding-top: 61px;
+        display: flex;
+        z-index: 1;
+    }
+
+    .name{
+        background-image: linear-gradient(to right, #d8b49c, #d38a96, #AD88C6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 30px;
+        margin:0;
+    }
+
+    .profile{
+        padding-left:8rem;
+        width: 25%;
+    }
+
+    .cont{
+        padding-right:12rem ;
+        padding-top: 7rem;
+        padding-left: 6rem;
+    }
+
+    .socials{
+        float: inline-start;
+    }
+
+    #resume p{
+        padding: 3px;
+        font-size: 15px;
+        float: right;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    /*ABOUT PAGE*/
+    .main1{
+        position: relative;
+        padding: 20px;
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+    h1{
+        background-image: linear-gradient(to right,#d8b49c, #d38a96, #AD88C6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .about_cnt{
+        text-align: justify;
+        text-indent: 5% ;
+        padding-top: 6rem;
+        padding-bottom: 20px;
+    }
+
+    .about_btn{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .abt_btn{
+        margin: 15px;
+        padding: 10px 25px;
+        text-align: center;
+        transition: 0.5s;
+        background-size: 200% auto;           
+        box-shadow: 0 0 2px #eee;
+        border-radius: 10px;
+        display: block;
+        border: 1px;
+        font-family: "poppins", sans-serif;
+        color: white;
+    }
+      
+    .abt_btn:hover, .back:hover {
+        background-image: linear-gradient(to right, #614385 0%, #FBA1B7  51%, #614385  100%);
+        background-position: right center;
+        color: #FFDFDF;
+        text-decoration: none;
+    }
+
+    /*ABOUT EXP*/
+
+    ._cnt{
+        padding-top: 4rem;
+        padding-left: 10px;
+    }
+
+    .bout_btn {
+        width: 31%;
+        border: none;
+        outline: none;
+        background-color: #AD88C6;
+        color: #191919;
+        cursor: pointer;
+        margin: 6px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    #myBtn{
+        margin-left: 45px;
+    }
+
+    .filterabout {
+        border: 1px solid #ccc;
+        float: left;
+        padding: 10px;
+        width: 46%;
+        height: 40%;
+        text-align: center;
+        margin: 2px;
+        display: none;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        
+    }
+
+    progress {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 30px;
+        border-radius: 15px; 
+        overflow: hidden; 
+        margin: 5px;
+    }
+
+    progress::-webkit-progress-bar {
+        background-color: #e0e0e0;
+        border-radius: 15px;
+
+    }
+    
+    progress::-webkit-progress-value {
+        background-image: linear-gradient(to right, #EFBC9B, #AD88C6);
+        border-radius: 15px 0 0 15px;
+    }
+
+    /* CONTACT PAGE */
+    .main2 {
+        position: fixed;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding: 60px;
+        display: flex;
+    }
+
+    .inputcnt {
+        font-size: 10px;
+        margin-top: 70px;
+        padding: 20px;
+        border: 1px solid #FFDFDF;
+        padding-left: 40px;
+        padding-right: 58px;
+        margin-right: 40px;
+        padding-bottom: 10px;
+        color: #FFDFDF;
+    }
+
+    input, textarea {
+        font-family: "Poppins";
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #FFDFDF;
+        outline: none;
+        padding: 5px;
+        font-size: 15px;
+        width: 100%;
+        color: #FBA1B7;
+    }
+
+    .info {
+        padding-left: 20px;
+        padding-top: 60px;
+        padding-right: 150px;
+        text-align: justify;
+    }
+
+    .ty {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    p {
+        padding-left: 5px;
+    }
+
+    .contact_icon {
+        padding-top: 20px;
+        padding-right: 60px;
+        display: flex;
+    }
+
+    .form {
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    textarea {
+        padding: 5px;
+        font-family: "Poppins";
+        align-items: center;
+        background-color: transparent;
+        border: 1px solid #FFDFDF;
+        outline: none;
+        margin-top: 20px;
+        font-size: 16px;
+        resize: vertical;
+        width: 100%;
+        min-height: 150px;
+        resize: none;
+    }
+
+    ::placeholder {
+        opacity: 90%;
+        color: #FFDFDF;
+    }
+
+    i {
+        padding: 10px;
+        font-size: 1.5rem;
+        color: #FFDFDF;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #FFDFDF, #614385, #FFDFDF);
+        width: 10px;
+        border-radius: 5px;
+    }
+
+    button {
+        font-family: "Poppins";
+        background-color: #AD88C6;
+        color: #FFDFDF;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    button:hover {
+        background-color: #FFDFDF;
+        color: #614385;
+    }
+
+
+    ::placeholder{
+        opacity: 90%;
+        color: #FFDFDF;
+    }
+
+    i{
+        padding:10px;
+        font-size: 1.5rem;
+        color: #FFDFDF;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #FFDFDF, #614385, #FFDFDF);
+        width: 5px;
+        border-radius:5px;
+    }
+
+progress[value] {
+    width: 250px;
+    height: 20px;
+}
+
+progress {
+    accent-color: coral;
+}
+
+
+/*projects*/
+.projects{
+        padding: 70px;
+}
+
+
+.show {
+  display: block;
+}
+
+.allprojects {
+  margin-top: 20px;
+}
+
+/* Style the buttons */
+.btn {
+  width: 24%;
+  border: none;
+  outline: none;
+  padding: 15;
+  background-color: #AD88C6;
+  color: #191919;
+  cursor: pointer;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+div.desc {
+    font-size: small;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #FFDFDF, #614385, #FFDFDF);
+            width: 5px;
+            border-radius:5px;
+        }
+
+        .navigation{
+            margin:1px;
+            padding: 1px;
+        }
+
+        .main {
+            position:sticky;
+            flex-direction: column;
+            padding: 6px;
+            margin-bottom: 15%;
+        }
+
+        .main2 {
+            position:sticky;
+            padding:6px;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .ty{
+            padding-bottom:10%;
+        }
+
+        .projects{
+            padding: 70px;
+        }
+
+        .inputcnt{
+            margin-left:35px;
+            margin-bottom: 10%;
+        }
+        
+        .main1{
+            margin-right: 2rem;
+            margin-left: 2rem;
+            position: relative;
+            padding-top: 20px;
+        }
+
+        .profile{
+            width:65%;
+        }
+
+        .cont {
+            border-top: 2px solid #FFDFDF;
+            padding-top: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .projects{
+            margin-bottom: 10%;
+        }
+
+        .filterabout{
+            width: 100%;
+        }
+
+        .name{
+            font-size: 25px;
+        }
+
+        .btn{
+            margin-left: 13px;
+            width: 100%;
+        }
+
+        .bout_btn{
+            width: 100%;
+        }
+
+        .allprojects{
+            margin-bottom: 50%;
+        }
+
+        .info{
+            padding-top: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .contact_icon{
+            padding:6px;
+        }
+
+        .back{
+            margin-top: 35px;
+            padding: 2px;
+            size: 2px;
+        }
+
+        ._cnt{
+            margin-top: 50px;
+            padding:10px;
+        }
+}
+
+@media only screen and (max-width: 1024px) {
+    .navigation a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .projects {
+        padding: 50px;
+    }
+
+    .filterabout {
+        width: 100%;
+    }
+
+    .btn {
+        width: 49%;
+    }
+
+    #myBtn{
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation a {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .projects {
+        padding: 40px;
+    }
+
+    .filterabout {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .main1, .main2, .projects {
+        margin-bottom: 20px; /* Add a 20px margin at the bottom */
+    }
+    
+    .navigation {
+        padding: 5px;
+    }
+
+    .projects {
+        padding: 30px;
+    }
+
+    .filterabout {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .main1, .main2 {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navigation a {
+        font-size: 12px;
+        padding: 4px;
+    }
+
+    .projects {
+        padding: 20px;
+    }
+
+    .main1, .main2 {
+        padding: 5px;
+    }
+
+    .filterabout {
+        padding: 5px;
+    }
+
+    .btn {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .navigation a {
+        font-size: 10px;
+        padding: 2px;
+    }
+
+    .projects {
+        padding: 10px;
+    }
+
+    .main1, .main2 {
+        padding: 2px;
+    }
+
+    .filterabout {
+        padding: 2px;
+    }
+
+    .btn {
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .profile {
+        padding-left: 4rem;
+        width: 30%;
+    }
+    .cont {
+        padding-right: 8rem;
+        padding-top: 5rem;
+        padding-left: 4rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .navigation a {
+        font-size: 16px;
+        padding: 8px;
+    }
+    .projects {
+        padding: 50px;
+    }
+    .filterabout {
+        width: 100%;
+    }
+    .btn {
+        width: 49%;
+    }
+    #myBtn {
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .navigation {
+        padding: 5px;
+    }
+    .profile {
+        padding-left: 2rem;
+        width: 35%;
+    }
+    .cont {
+        padding-right: 4rem;
+        padding-top: 4rem;
+        padding-left: 2rem;
+    }
+    .main, .main2 {
+        margin-bottom: 20px; /* Add a 20px margin at the bottom */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        flex-direction: column;
+        padding: 6px;
+        margin-bottom: 15%;
+        
+    }
+    .main2 {
+        flex-direction: column;
+        align-items: center;
+        padding: 6px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .profile {
+        width: 65%;
+    }
+    .cont {
+        border-top: 2px solid #FFDFDF;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .name {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navigation a {
+        font-size: 12px;
+        padding: 4px;
+    }
+    .main, .main2 {
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .navigation a {
+        font-size: 10px;
+        padding: 2px;
+    }
+    .main, .main2 {
+        padding: 2px;
+    }
+}
+
+

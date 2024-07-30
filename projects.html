@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="mylogo.png" alt="Image not found" class="logo">
+        </div>
+        <div class = "navigation">
+            <a href="contact.html" target="_self" class="nav_icon">Contact</a>
+            <a href="about.html" target="_self">About</a>
+            <a href="projects.html" target="_self">Projects</a>
+            <a href="home.html" target="_self">Home</a>
+        </div>
+    </nav>
+
+    <div class="projects">
+        <h1>Projects</h1>
+        <p>Here are some of my projects.</p>
+
+        <div id="myBtn" style="margin: 0;">
+            <button class="btn" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('web')"> Web Development</button>
+            <button class="btn" onclick="filterSelection('game')"> Game Development</button>
+            <button class="btn" onclick="filterSelection('design')"> Design </button>
+        </div>
+
+        <div class="allprojects">
+
+            <div class="filterabout game">
+                <a href="https://youtu.be/iOG93G97BLQ?si=eyDMkyltHukCk7gp" target="_blank"><img src="project3.png" alt="Image not found" width="100%"></a>
+                <div class="desc">
+                    <b>Egg Catcher</b>
+                    <p>Allow me to introduce you to the "Egg Catcher Game"! In this interactive game, players must move their basket left or right to catch falling eggs, earning points for each successfully caught egg.</p>
+                </div>
+            </div>
+
+            <div class="filterabout web">
+                <a href="#"><img src="project4.jpeg" alt="Image not found" width="100%"></a>
+                <div class="desc">
+                    <b>LogIn form</b>
+                    <p>This is a simple LogIn form. The form includes fields for username and password, along with a prominent login button. A link for password recovery is also included for enhanced user experience.</p>
+                </div>
+            </div>
+
+            <div class="filterabout web">
+                <a href="http://127.0.0.1:5502/menu.html" target="_blank"><img src="project1.jpeg" alt="Image not found" width="100%"></a>
+                <div class="desc">
+                    <b>Menu</b>
+                    <p>The Cake Menu web page is a beautifully designed digital menu showcasing a selection of cakes available at a bakery or café. This page is crafted to make it easier for customers to browse overview of cake options, with complete with detailed descriptions and enticing visuals. </p>
+                </div>
+            </div>
+
+            <div class="filterabout design">
+                <img src="project2.png" alt="Image not found" width="100%">
+                <div class="desc"></br>
+                    <b>Yonaka Cafe</b>
+                    <p>Web application designed to simplify the ordering process for customers at a café. This system enhances the customer experience by providing an intuitive interface for selecting and customizing menu items, placing orders, and managing payments.</p>
+                </div>
+            </div>
+
+            <div class="filterabout design">
+                <img src="project5.png" alt="Image not found" width="100%">
+                <div class="desc">
+                    <b>Hospital Management System</b>
+                    <p>The Hospital Management System is a comprehensive web-based application designed to streamline the administration and management of hospital operations. This system facilitates the efficient handling of patient data, appointment scheduling, and more, ultimately improving the overall efficiency and effectiveness of hospital services.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+

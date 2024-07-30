@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img src="mylogo.png" alt="Image not found" class="logo">
+        </div>
+        <div class = "navigation">
+            <a href="contact.html" target="_self">Contact</a>
+            <a href="about.html" target="_self">About</a>
+            <a href="projects.html" target="_self">Projects</a>
+            <a href="home.html" target="_self">Home</a>
+        </div>
+    </nav>  
+
+    <div class="main1">
+        <div class="about_cnt">
+            <h1>About me</h1>
+            <p>Hi! My name is <b>Anne Lorraine Peñaverde</b>, and I am a BSIT student in Laguna State Polytechnic University Siniloan HOST Campus. 
+
+            As a student pursuing a bachelor's degree in information technology, I find myself motivated by a desire to learn and grow in my career. My ultimate goal is to apply my knowledge and skills to have a significant effect in the IT industry. I'm dedicated to delivering positive change through technology, whether it means developing new software solutions, optimizing network infrastructure, or improving cybersecurity measures. I hope to pursue a job that will allow me to continually learn, adapt, and contribute to the advancement of IT solutions. </p>
+        </div>
+        
+        <div id="myBtn">
+            <button class="bout_btn" onclick="filterSelection('education')"> Education </button>
+            <button class="bout_btn" onclick="filterSelection('skills')"> Skills </button>
+            <button class="bout_btn" onclick="filterSelection('experince')"> Experiences </button>
+        </div>
+
+        <div class="filterabout education" style="width: 100%;">
+            <h1>Educational Background</h1>
+            <p>
+                <b>Present</b><br>
+                Laguna State Polytechnic University <br>
+                Siniloan, Laguna <br>
+                2022 
+            </p>
+                
+            <p>
+                <b>K to 12</b><br>
+                Infanta National High School <br>
+                Infanta, Quezon <br>
+                2020 – 2022 
+            </p>
+    
+            <p>
+                <b>Secondary</b><br>
+                Infanta National High School<br>
+                Infanta, Quezon<br>
+                2017 – 2020
+            </p>
+    
+            <p>
+                <b>Primary</b><br>
+                Infanta Central Elementary School<br>
+                Infanta, Quezon<br>
+                2010 – 2016
+            </p>
+        </div>
+
+        <div class="filterabout skills" style="width: 100%;">
+            <h1 style="margin-bottom: 30px;">Skills</h1>
+            <label for="html" style="padding: 30px;">HTML</label>
+            <progress max="100" value="70"></progress><br>
+
+            <label for="python" style="padding: 23px;">Python</label>
+            <progress max="100" value="55"></progress><br>
+
+            <label for="c#" style="padding: 39px;">C#</label>
+            <progress max="100" value="60"></progress><br>
+
+            <label for="db" style="padding: 13px;">Database</label>
+            <progress max="100" value="55"></progress><br>
+
+            <label for="design" style="padding: 13px;">Designing</label>
+            <progress max="100" value="65"></progress><br>
+            
+        </div>
+
+        <div class="filterabout experince" style="width: 100%;">
+            <h1>Experiences</h1>    
+            <p>
+                NCII – Computer System Servicing<br>
+                (August 2020) </br>
+                Install and Configure Computer System and Computer Network<br>
+                Set up Computer Network <br>
+                Set up Computer Server <br>
+                PC Assembly
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>
